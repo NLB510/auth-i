@@ -36,7 +36,7 @@ router.post('/', (req, res) => {
 
   }
 
-  db.addUser()
+  
 })
 
 module.exports = router;
