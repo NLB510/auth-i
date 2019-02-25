@@ -1,6 +1,6 @@
 const express = require('express');
 
-// db = require('')
+const db = require('../data/model/userModel')
 
 const router = express.Router();
 

@@ -14,8 +14,8 @@ server.use(helmet());
 
 
 server.use('/api/register', registerRouter);
-server.use('api/login', loginRouter);
-server.use('api/users', usersRouter);
+server.use('/api/login', loginRouter);
+server.use('/api/users', usersRouter);
 
 
 
