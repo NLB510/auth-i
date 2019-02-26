@@ -23,6 +23,7 @@ router.post('/', (req, res) => {
   } else {
     db.addUser(user)
     .then(user => {
+      req.session.username = user.username
       res.status(201).json({
         message: "User registered successfully",
         user
