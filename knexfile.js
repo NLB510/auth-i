@@ -7,9 +7,8 @@ pg.defaults.ssl = true;
 module.exports = {
   development: {
     client: "pg",
-    connection: {
-      filename: process.env.DATABASE_URL
-    },
+    connection: process.env.DATABASE_URL,
+    
     useNullAsDefault: true,
     migrations: {
       directory: "./data/migrations",
